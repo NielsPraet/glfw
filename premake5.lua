@@ -24,9 +24,11 @@ files {
     "src/egl_context.c", "src/osmesa_context.c", "src/linux_joystick.c"
 }
 
+include {"/usr/include"}
+
 links {
     "GL", "dl", "pthread", "wayland-client", "wayland-cursor", "wayland-egl",
-    "wayland-protocols"
+    "wayland-protocols", "/usr/include"
 }
 
 defines {"_GLFW_WAYLAND"}
