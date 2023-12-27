@@ -24,6 +24,8 @@ files {
     "src/egl_context.c", "src/osmesa_context.c", "src/linux_joystick.c"
 }
 
+links {"wayland-client", "wayland-cursor", "xkbcommon", "EGL", "GLESv2"}
+
 defines {"_GLFW_WAYLAND"}
 
 filter "system:windows"
